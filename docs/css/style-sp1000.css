@@ -1,0 +1,20 @@
+@charset "UTF-8";
+:root {
+  --window-padding: 25px;
+  --vertical-window-padding: 60px;
+}
+
+.sp {
+  display: block;
+}
+
+.pc {
+  display: none;
+}
+
+.btn01 {
+  height: 50px;
+  font-size: 16px;
+  max-width: 250px;
+  margin: 0 auto;
+}

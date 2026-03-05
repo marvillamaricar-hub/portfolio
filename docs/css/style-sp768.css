@@ -1,0 +1,18 @@
+@charset "UTF-8";
+:root {
+  --window-padding: 3%;
+  --vertical-window-padding: 50px;
+}
+
+.btn01 {
+  height: 50px;
+  font-size: 16px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.mv {
+  background: url(../img/top/mv-sp.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
