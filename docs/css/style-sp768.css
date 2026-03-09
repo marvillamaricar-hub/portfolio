@@ -158,9 +158,14 @@
 
   .top_platforms .inner .cards {
     flex-direction: column;
+    align-items: center;
   }
 
   .top_cert .cards .card {
     width: calc(60% / 1);
+  }
+
+  .top_platforms .inner .cards .card {
+    width: calc(50% / 1);
   }
 }

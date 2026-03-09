@@ -377,10 +377,7 @@ a.anchor {
 }
 
 .top_snapshot {
-  background-image: url(../img/top/img02.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: #fff;
 }
 
 .top_snapshot .inner {
@@ -421,7 +418,7 @@ a.anchor {
 }
 
 .top_snapshot .cards .card p {
-  color: #fff;
+  color: var(--font-color);
   margin-bottom: 10px;
   font-weight: 600;
   border-left: solid 2px var(--font-color02);
