@@ -174,18 +174,3 @@ $(function () {
   });
 
 });
-
-//sticky scroll
-$(function () {
-  const stickySection = document.querySelector('.sticky-section');
-  const stickyPanels  = document.querySelectorAll('.sticky-panel');
-
-  window.addEventListener('scroll', () => {
-    const relScroll = window.scrollY - stickySection.offsetTop;
-    const step = Math.min(stickyPanels.length - 1, Math.max(0, Math.floor(relScroll / window.innerHeight)));
-
-    stickyPanels.forEach((p, i) => {
-      p.classList.toggle('active', i === step);
-    });
-  }, { passive: true });
-});
