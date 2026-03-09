@@ -1,11 +1,12 @@
 @charset "UTF-8";
 
 .footer {
-  color: #717171;
-  background-color: var(--main-bg-color);
+  color: #fff;
+  background-color: var(--font-color);
   padding-top: 60px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   font-family: var(--font-family02);
+  border-top: solid 2px var(--font-color02);
 }
 
 .footer_nav ul {
@@ -14,16 +15,17 @@
 }
 
 .footer_nav ul li {
-  width: calc(100% / 4);
+  width: calc(100% / 3);
   text-align: center;
 }
 
 .footer_nav ul li a {
-  color: #717171;
+  color: #fff;
   padding-bottom: 5px;
   position: relative;
   font-family: var(--font-family01);
   font-weight: 600;
+  font-size: 18px;
 }
 
 .footer_nav ul.sp {
@@ -32,7 +34,7 @@
 
 .footer_nav ul li a::before {
   content: "";
-  background-color: var(--font-color);
+  background-color: #fff;
   width: 0%;
   height: 2px;
   position: absolute;

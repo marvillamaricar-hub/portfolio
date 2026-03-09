@@ -11,8 +11,156 @@
   margin: 0 auto;
 }
 
-.mv {
-  background: url(../img/top/mv-sp.jpg) no-repeat;
-  background-position: center;
-  background-size: cover;
+.mv .inner {
+  flex-direction: column-reverse;
+}
+
+.mv .inner .mv_img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -20px;
+  right: 3%;
+}
+
+.mv .inner .mv_img img {
+  height: 100%;
+  width: 100%;
+}
+
+.mv .inner .mv_text h2 {
+  padding-right: 25%;
+}
+
+.top_contacts .cards .card a {
+  font-size: 16px;
+}
+
+.sticky-section {
+  flex-direction: column;
+  height: auto;
+  padding: 30px 0;
+}
+
+.sticky-left {
+  position: relative;
+  height: auto;
+  width: 100%;
+  padding: 20px 3%;
+  justify-content: flex-start;
+}
+
+.sticky-right {
+  width: 100%;
+}
+
+.sticky-panel {
+  height: auto;
+  padding: 30px 3%;
+}
+
+.sticky-section02 .sticky-left__title, .sticky-section02 .sticky-left__sub {
+  text-align: start;
+}
+
+.sticky-section02 .sticky-panel {
+  align-items: flex-start;
+}
+
+.sticky-section02 .sticky-panel__text {
+  text-align: start;
+}
+
+.sticky-panel::after {
+  left: unset;
+  right: 0;
+}
+
+.top_platforms .inner .cards {
+  gap: 20px;
+}
+
+.top_cert .cards .card {
+  width: calc(60% / 2);
+}
+
+@media screen and (max-width: 576px) {
+  .section_ttl {
+    font-size: 30px;
+  }
+
+  .top_snapshot .cards .card {
+    width: calc(98% / 1);
+  }
+
+  .mv .inner .mv_img {
+    width: 100px;
+    height: 100px;
+    top: 0;
+  }
+
+  .mv .inner .mv_text h2 {
+    font-size: clamp(1rem, 1.5vw, 2.5rem);
+  }
+
+  .top_client_exp .inner ul li {
+    padding: 0;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .top_client_exp .inner ul li .label {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px #3332;
+    background-color: #66a1f74a;
+  }
+
+  .top_client_exp .inner ul li .desc {
+    width: 100%;
+    padding: 10px;
+    border-bottom: solid 1px #3332;
+    background-color: #fff;
+  }
+
+  .top_client_exp .inner ul li:nth-child(odd) {
+    background-color: unset;
+  }
+
+  .top_client_exp .inner ul li:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+
+  .top_case_studies .banner h2 {
+    line-height: 40px;
+  }
+
+  .top_case_studies .banner h3 {
+    font-size: 16px;
+  }
+
+  .top_case_studies .banner {
+    align-items: self-start;
+    gap: 10px;
+  }
+
+  .top_case_studies .case .txt_box {
+    padding: 30px 3%;
+  }
+
+  .top_addexp p span {
+    font-size: 25px;
+  }
+
+  .top_addexp .section_ttl {
+    margin-bottom: 30px;
+  }
+
+  .top_platforms .inner .cards {
+    flex-direction: column;
+  }
+
+  .top_cert .cards .card {
+    width: calc(60% / 1);
+  }
 }

@@ -18,3 +18,16 @@
   max-width: 250px;
   margin: 0 auto;
 }
+
+.top_case_studies .case .txt_box .cards .card:nth-child(1), .top_case_studies .case .txt_box .cards .card:nth-child(2) {
+  width: 100%;
+}
+
+.top_cert .cards {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.top_cert .cards .card {
+  width: calc(50% / 2);
+}
