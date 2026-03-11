@@ -1,614 +1,627 @@
-
 <!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" /><title>Maricar Marvilla&#39;s Portfolio</title><meta name="description" content="" /><meta name="format-detection" content="telephone=no">
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./img/favicon.ico" />
-    <link rel="icon" href="./img/favicon-192x192.png" sizes="48x48" type="image/png" media="all" />
-    <link rel="shortcut icon" href="./img/favicon.ico" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maricar Marvilla — Facebook Ads Manager</title>
+  <meta name="description" content="Facebook Ads Manager specializing in lead generation and sales campaigns for service-based businesses." />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./css/style.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./css/reset.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style.css" />
-    <link rel="stylesheet" type="text/css" href="./css/style-sp1000.css" media="only screen and (max-width: 1000px)" />
-    <link rel="stylesheet" type="text/css" href="./css/style-sp768.css" media="only screen and (max-width: 768px)" />
-    <link rel="stylesheet" type="text/css" href="./css/animation.css" />
+  <!-- Preconnect fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-    <!-- Javascript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/functions.js"></script>
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="header-logo">Maricar Marvilla</div>
+  <nav class="header-nav">
+    <a href="#">Home</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#contact">Contact</a>
+    <a href="https://calendly.com/maricarmarvilla/30min" target="_blank" class="cta-btn">Book a Call</a>
+  </nav>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
 
-    <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-    </head>
-    <!-- <div id="custom-cursor"></div> -->
-    <body id="top">
-      <header class="header-main">
-        <div class="inner">
-          <div class="nav-box">
-            <nav class="header-nav">
-              <ul class="link-wrap">
-                <li class="link-item"><a class="" href="./index.html">Home</a></li>
-                <li class="link-item"><a class="" href="#case_studies">Case Studies</a></li>
-                <li class="link-item"><a class="" href="#top_contacts">Contacts</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="sp-menu hide-pc"><span></span><span></span><span></span></div>
+<!-- Mobile Nav -->
+<nav class="mobile-nav" id="mobile-nav">
+  <a href="#" onclick="closeMobile()">Home</a>
+  <a href="#case-studies" onclick="closeMobile()">Case Studies</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="https://calendly.com/maricarmarvilla/30min" target="_blank" class="cta-btn-mobile">Book a Call</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-eyebrow">Facebook Ads Manager</div>
+    <h1>Maricar<br>Marvilla</h1>
+    <h2>Lead Generation &amp; Sales Campaigns</h2>
+    <p>I help service-based businesses generate leads, bookings, and revenue through strategic Facebook Ads campaigns.</p>
+    <p>My work focuses on building <strong>data-driven advertising strategies</strong> that connect businesses with the right audience and convert them into paying customers.</p>
+    <p>Industries served: <strong>Wellness, beauty, coaching &amp; local services</strong> across the <strong>United States and the Philippines.</strong></p>
+    <a href="https://calendly.com/maricarmarvilla/30min" target="_blank" class="hero-cta">
+      Book a Discovery Call
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+  <div class="hero-img-wrap">
+    <img src="./img/top/img01.jpg" alt="Maricar Marvilla" class="hero-img" />
+  </div>
+</section>
+
+<!-- ===== STATS BANNER ===== -->
+<div class="stats-banner reveal">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal reveal-delay-1">
+        <div class="stat-num">₱450K</div>
+        <div class="stat-label">Sales generated in one month</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-2">
+        <div class="stat-num">275</div>
+        <div class="stat-label">Messenger leads from a single campaign</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-3">
+        <div class="stat-num">$0.18</div>
+        <div class="stat-label">Lowest cost per click achieved</div>
+      </div>
+      <div class="stat-item reveal reveal-delay-4">
+        <div class="stat-num">26×</div>
+        <div class="stat-label">ROAS — ₱68.7K revenue on ₱2.6K spend</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CAMPAIGN SNAPSHOTS ===== -->
+<section class="snapshot section">
+  <div class="container">
+    <div class="snapshot-header reveal">
+      <div class="label-tag">3+ Years of Results</div>
+      <h2 class="section-title">Campaign Performance Snapshots</h2>
+      <p>Click any image to view full size</p>
+    </div>
+    <div class="snapshot-grid">
+      <div class="snap-card reveal reveal-delay-1">
+        <div class="snap-card-label">₱450,000 Sales Generated in One Month</div>
+        <img src="./img/top/snapshot/img01.png" alt="Campaign snapshot 1" class="snap-card-img" onclick="openModal(this.src)" />
+      </div>
+      <div class="snap-card reveal reveal-delay-2">
+        <div class="snap-card-label">275 Messenger Leads Generated</div>
+        <img src="./img/top/snapshot/img02.png" alt="Campaign snapshot 2" class="snap-card-img" onclick="openModal(this.src)" />
+      </div>
+      <div class="snap-card reveal reveal-delay-3">
+        <div class="snap-card-label">$0.18 Cost Per Click Campaign</div>
+        <img src="./img/top/snapshot/img03.png" alt="Campaign snapshot 3" class="snap-card-img" onclick="openModal(this.src)" />
+      </div>
+      <div class="snap-card reveal reveal-delay-4">
+        <div class="snap-card-label">₱68,700 Revenue from ₱2,600 Ad Spend</div>
+        <img src="./img/top/snapshot/img04.png" alt="Campaign snapshot 4" class="snap-card-img" onclick="openModal(this.src)" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CLIENT EXPERIENCE ===== -->
+<section class="client-exp section">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom: 3rem;">
+      <div class="label-tag">Who I've Worked With</div>
+      <h2 class="section-title">Client Experience</h2>
+    </div>
+    <div class="exp-list reveal">
+      <div class="exp-item">
+        <span class="exp-number">01</span>
+        <span class="exp-name">Massage Therapy Clinic — Las Vegas, USA</span>
+        <span class="exp-tag">3 Years</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-number">02</span>
+        <span class="exp-name">Aesthetic Clinic — Muntinlupa, Philippines</span>
+        <span class="exp-tag">1.5 Years</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-number">03</span>
+        <span class="exp-name">Beauty Clinic — BGC, Taguig</span>
+        <span class="exp-tag">Lead Generation</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-number">04</span>
+        <span class="exp-name">Massage Therapy Clinic — BGC, Taguig</span>
+        <span class="exp-tag">Fully Booked Campaign</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-number">05</span>
+        <span class="exp-name">Shoe Cleaning Service — Manila, Philippines</span>
+        <span class="exp-tag">Revenue Campaign</span>
+      </div>
+      <div class="exp-item">
+        <span class="exp-number">06</span>
+        <span class="exp-name">Tap Dance Coaching Program — USA</span>
+        <span class="exp-tag">Lead Generation</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CASE STUDIES ===== -->
+<section class="case-studies section" id="case-studies">
+  <div class="container">
+    <div class="case-studies-header reveal">
+      <div class="label-tag">In Depth</div>
+      <h2 class="section-title">Case Studies</h2>
+    </div>
+
+    <div class="cases-list">
+
+      <!-- Case 1 -->
+      <div class="case-card reveal">
+        <div class="case-banner bg01">
+          <h2>Massage Therapy Clinic</h2>
+          <h3>Las Vegas, Nevada, USA</h3>
         </div>
-      </header>
-      
-      <main>
-        <article>
-          <div class="mv">
-            <div class="inner">
-              <div class="mv_text">
-                  <h1>Maricar Marvilla</h1>
-                  <h2>Facebook Ads Manager | Lead Generation & Sales Campaigns</h2>
-
-                  <p class="mb20">I help service-based businesses generate leads, bookings, and revenue through strategic Facebook Ads campaigns.</p>
-                  <p class="mb20">My work focuses on building data-driven advertising strategies that connect businesses with the right audience and convert them into paying customers.</p>
-                  <p class="mb40">I have managed campaigns for businesses in the <span>wellness, beauty, coaching, and local services industries</span> across the <span>United States and the Philippines.</span></p>
-                  <a href="https://calendly.com/maricarmarvilla/30min" target="_blank" class="btn01 hv">Book A Discovery Call With Me</a>
-              </div>
-              <div class="mv_img">
-                <img src="./img/top/img01.jpg" alt="profile_pic" class="w100 rounded-10">
-              </div>
+        <div class="case-body">
+          <div class="case-grid">
+            <div class="case-block">
+              <h4>Industry</h4>
+              <p>Massage Therapy / Wellness</p>
+            </div>
+            <div class="case-block">
+              <h4>Campaign Goal</h4>
+              <p>Generate consistent Messenger inquiries and bookings.</p>
+            </div>
+            <div class="case-block">
+              <h4>Strategy</h4>
+              <p>Messenger conversion campaigns targeting wellness &amp; lifestyle audiences, with video and image creatives optimized for messaging conversions.</p>
             </div>
           </div>
-
-          <section class="top_snapshot pd-tb pd-lr">
-            <div class="inner">
-              <h2 class="section_ttl center">Campaign Performance Snapshot <span>3+ Years Managing Facebook Ads Campaigns</span></h2>
-
-              <div class="cards animate-bottom">
-                <div class="card">
-                  <p>₱450,000 Sales Generated in One Month</p>
-                  <div class="img_box">
-                    <img src="./img/top/snapshot/img01.png" alt="img01">
-                  </div>
-                </div>
-                <div class="card">
-                  <p>275 Messenger Leads Generated</p>
-                  <div class="img_box">
-                    <img src="./img/top/snapshot/img02.png" alt="img02">
-                  </div>
-                </div>
-                <div class="card">
-                  <p>$0.18 Cost Per Click Campaign</p>
-                  <div class="img_box">
-                    <img src="./img/top/snapshot/img03.png" alt="img03">
-                  </div>
-                </div>
-                <div class="card">
-                  <p>₱68,700 Revenue from ₱2,600 Ad Spend</p>
-                  <div class="img_box">
-                    <img src="./img/top/snapshot/img04.png" alt="img04">
-                  </div>
-                </div>
-              </div>
-
-              <div id="imageModal" class="image-modal">
-                <span class="close-btn">&times;</span>
-                <img class="modal-content" id="modalImg">
-              </div>
+          <div class="case-block" style="margin-bottom:1.5rem;">
+            <h4>Results</h4>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>$842</span><span>Ad Spend</span></div>
+              <div class="metric-chip"><span>168</span><span>Messenger Conversations</span></div>
+              <div class="metric-chip"><span>~$5</span><span>Cost Per Message</span></div>
             </div>
-          </section>
-
-          <section class="top_client_exp pd-b pd-lr">
-            <div class="inner">
-              <h2 class="section_ttl center">Client Experience</h2>
-              <ul class="animate-bottom">
-                <li>
-                  <p class="label">Massage Therapy Clinic (Las Vegas, USA)</p>
-                  <p class="desc">Client for 3 Years</p>
-                </li>
-                <li>
-                  <p class="label">Aesthetic Clinic (Muntinlupa, Philippines)</p>
-                  <p class="desc">Client for 1.5 Years</p>
-                </li>
-                <li>
-                  <p class="label">Beauty Clinic (BGC, Taguig)</p>
-                  <p class="desc">Lead Generation Campaign</p>
-                </li>
-                <li>
-                  <p class="label">Massage Therapy Clinic (BGC, Taguig)</p>
-                  <p class="desc">Fully Booked Month Campaign</p>
-                </li>
-                <li>
-                  <p class="label">Shoe Cleaning Service (Manila, Philippines)</p>
-                  <p class="desc">Revenue Campaign</p>
-                </li>
-                <li>
-                  <p class="label">Tap Dance Coaching Program (USA)</p>
-                  <p class="desc">Lead Generation Project</p>
-                </li>
-              </ul>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>$1,223</span><span>Ad Spend</span></div>
+              <div class="metric-chip"><span>265</span><span>Messenger Conversations</span></div>
+              <div class="metric-chip"><span>$4.62</span><span>Cost Per Message</span></div>
             </div>
-          </section>
-
-          <a href="#" id="case_studies" class="anchor"></a>
-          <section class="top_case_studies">
-            <h2 class="section_ttl center">Case Studies</h2>
-            <div class="case case01">
-              <div class="banner bg_accent">
-                <h2 class="animate-bottom">Massage Therapy Clinic</h2>
-                <h3 class="animate-bottom">Las Vegas, Nevada, USA</h3>
-              </div>
-              <div class="txt_box">
-                <div class="cards">
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Industry</h2>
-                    <p>Massage Therapy / Wellness</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Goal</h2>
-                    <p>Generate consistent Messenger inquiries and bookings.</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Strategy</h2>
-                    <p>
-                      • Built Messenger conversion campaigns<br>
-                      • Tested audience targeting based on wellness and lifestyle interests<br>
-                      • Used video and image creatives highlighting massage services<br>
-                      • Optimized campaigns based on messaging conversions
-                    </p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Results</h2>
-                    <p>
-                      <span>Campaign Example:</span>
-                      Ad Spend: ~$842<br>
-                      Messenger Conversations: 168<br>
-                      Cost Per Message: ~$5<br>
-                      <br>
-                      <span>Another campaign generated:</span>
-                      Ad Spend: ~$1,223<br>
-                      Messenger Conversations: 265<br>
-                      Cost Per Message: ~$4.62<br>
-                      These campaigns consistently generated inquiries and helped the clinic attract new customers.
-                    </p>
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <img src="./img/top/case-study/img01.png" alt="mc-dec2024-april2025" class="mb20">
-                    <img src="./img/top/case-study/img02.png" alt="mc-jul-oct2024">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="case case02 case01">
-              <div class="banner bg_accent">
-                <h2 class="animate-bottom">Massage Therapy Clinic</h2>
-                <h3 class="animate-bottom">Bonifacio Global City, Philippines</h3>
-              </div>
-              <div class="txt_box">
-                <div class="cards">
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Goal</h2>
-                    <p>Increase massage bookings for the clinic.</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Strategy</h2>
-                    <p>
-                      • Local audience targeting within Bonifacio Global City<br>
-                      • Engaging ad creatives promoting massage therapy services<br>
-                      • Messenger inquiry campaigns
-                    </p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Result</h2>
-                    <p>
-                      The campaign successfully generated strong demand and helped the clinic achieve a fully booked month of appointments.
-                    </p>
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <img src="./img/top/case-study/img03.png" alt="img03" class="mb20">
-                    <img src="./img/top/case-study/img04.png" alt="img04" class="mb20">
-                    <img src="./img/top/case-study/img05.png" alt="img05" class="mb20">
-                    <img src="./img/top/case-study/img06.png" alt="img06">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="case case03">
-              <div class="banner bg_accent">
-                <h2 class="animate-bottom">Aesthetic Clinic</h2>
-                <h3 class="animate-bottom">Bonifacio Global City, Taguig</h3>
-              </div>
-              <div class="txt_box">
-                <div class="cards">
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Objective</h2>
-                    <p>Generate inquiries for aesthetic and beauty treatments.</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Results</h2>
-                    <p>
-                      <span>Campaign 1</span>
-                      Ad Spend: ₱9,998<br>
-                      Messages Generated: 151<br>
-                      Cost Per Message: ₱66<br>
-                      Reach: 14,758<br>
-                      <br>
-                      <span>Campaign 2</span>
-                      Ad Spend: ₱12,454<br>
-                      Messages Generated: 275<br>
-                      Cost Per Message: ₱45<br>
-                      Reach: 43,150
-                    </p>
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <img src="./img/top/case-study/img07.png" alt="img07" class="mb20">
-                    <img src="./img/top/case-study/img08.png" alt="img08" class="mb20">
-                    <img src="./img/top/case-study/img09.png" alt="img09">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="case case04 case03">
-              <div class="banner bg_accent">
-                <h2 class="animate-bottom">Aesthetic Clinic</h2>
-                <h3 class="animate-bottom">Muntinlupa, Philippines</h3>
-              </div>
-              <div class="txt_box">
-                <div class="cards">
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Objective</h2>
-                    <p>Increase clinic inquiries and support overall business growth.</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Highlight Result</h2>
-                    <p>
-                      <span>In November, the clinic generated:</span>
-                      <span>₱450,000 in total sales.</span>
-                      While some sales came from returning customers, Facebook Ads campaigns and social media content helped attract new clients and increase inquiries during that period.
-                    </p>
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <img src="./img/top/case-study/img10.png" alt="img10">
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <h2 class="subttl">Other Winning Campaigns</h2>
-                    <img src="./img/top/case-study/img11.png" alt="img11" class="mb20">
-                    <img src="./img/top/case-study/img12.png" alt="img12">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="case case05">
-              <div class="banner bg_accent">
-                <h2 class="animate-bottom">Shoe Cleaning Service</h2>
-                <h3 class="animate-bottom">Manila, Philippines</h3>
-              </div>
-              <div class="txt_box">
-                <div class="cards">
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Goal</h2>
-                    <p>Generate sales through Facebook Ads.</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Strategy</h2>
-                    <p>
-                      • Audience targeting for sneaker enthusiasts<br>
-                      • Engaging ad creatives promoting shoe restoration services<br>
-                      • Messenger-based lead generation campaign
-                    </p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Result</h2>
-                    <p>
-                      <span>Revenue Generated: ₱68,700</span>
-                      <span>Ad Spend: ₱2,600</span>
-                      This campaign demonstrated how targeted Facebook Ads can generate strong revenue even with a modest advertising budget.
-                    </p>
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <img src="./img/top/case-study/img13.png" alt="img13" class="mb20">
-                    <img src="./img/top/case-study/img14.png" alt="img14" class="mb20">
-                    <img src="./img/top/case-study/img15.png" alt="img15">
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="case case06">
-              <div class="banner bg_accent">
-                <h2 class="animate-bottom">Tap Dance Coaching Program</h2>
-                <h3 class="animate-bottom">United States</h3>
-              </div>
-              <div class="txt_box">
-                <div class="cards">
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Campaign Objective</h2>
-                    <p>Drive traffic to a ticket sales page for a coaching program.</p>
-                  </div>
-                  <div class="card animate-bottom">
-                    <h2 class="subttl">Results</h2>
-                    <p>
-                      <span>Campaign 1</span>
-                      Link Clicks: 402<br>
-                      Cost Per Click: $0.18<br>
-                      Reach: 6,315<br>
-                      Ad Spend: $71.24<br>
-                      <br>
-                      <span>Campaign 2</span>
-                      Website Leads: 503<br>
-                      Cost Per Lead: $3.55<br>
-                      Link Clicks: 3,137<br>
-                      Ad Spend: $1,785.81<br>
-                      <br>
-                      The campaign successfully generated strong traffic performance and surpassed the client’s target lead goal.
-                    </p>
-                  </div>
-                  <div class="card img_box animate-bottom">
-                    <img src="./img/top/case-study/img16.png" alt="img16" class="mb20">
-                    <img src="./img/top/case-study/img17.png" alt="img17" class="mb20">
-                    <img src="./img/top/case-study/img18.png" alt="img18">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="top_addexp bg_accent pd-tb pd-lr">
-            <div class="inner">
-              <h2 class="section_ttl center">Additional Experience</h2>
-              <p class="mb20"><span class="font-bold">Content Strategy & Social Media Support</span><br><br>Alongside Facebook Ads management, I have also supported several clients with social media content strategy and page management.</p>
-              <p>This included:<br>
-                • Writing hooks for carousel posts<br>
-                • Creating carousel content structure<br>
-                • Supporting Instagram Reel concepts<br>
-                • Caption writing and content planning<br><br>
-                My role was to support brand <span>visibility</span> and <span>audience engagement</span> while paid campaigns focused on lead generation.</p>
-            </div>
-          </section>
-
-          <!-- STICKY SCROLL: HOW IT WORKS -->
-          <section class="sticky-section" id="strat">
-
-            <!-- LEFT: stays pinned while right scrolls -->
-            <div class="sticky-left">
-              <div class="sticky-left__inner">
-                <p class="sticky-left__label">How It Works</p>
-                <h2 class="sticky-left__title">My Facebook <br> Ads Strategy</h2>
-                <p class="sticky-left__sub">Successful Facebook advertising requires a strategic approach.</p>
-              </div>
-            </div>
-
-            <!-- RIGHT: scrollable steps -->
-            <div class="sticky-right">
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">01</div>
-                <h3 class="sticky-panel__title">Audience Research</h3>
-                <p class="sticky-panel__text">Understanding customer demographics, interests, and behaviors to target the right audience.</p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">02</div>
-                <h3 class="sticky-panel__title">Campaign Structure</h3>
-                <p class="sticky-panel__text">
-                  Campaigns are structured based on business goals: <br>
-
-                  • Lead generation<br>
-                  • Messenger inquiries<br>
-                  • Website traffic<br>
-                  • Conversion campaigns
-                </p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">03</div>
-                <h3 class="sticky-panel__title">Creative Testing</h3>
-                <p class="sticky-panel__text">Testing multiple ad creatives and messaging angles to determine the most effective combinations.</p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">04</div>
-                <h3 class="sticky-panel__title">Optimization</h3>
-                <p class="sticky-panel__text">Campaigns are optimized continuously using performance metrics such as CTR, cost per result, and engagement.</p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">05</div>
-                <h3 class="sticky-panel__title">Scaling</h3>
-                <p class="sticky-panel__text">Winning campaigns are scaled to generate consistent leads and revenue.</p>
-              </div>
-
-            </div>
-          </section>
-
-          <section class="sticky-section sticky-section02" id="strat">
-
-            <!-- LEFT: stays pinned while right scrolls -->
-            <div class="sticky-left">
-              <div class="sticky-left__inner">
-                <p class="sticky-left__label"></p>
-                <h2 class="sticky-left__title">How I Work<br>With Clients</h2>
-                <p class="sticky-left__sub">I focus on creating a clear and collaborative process to ensure campaigns are built strategically and optimized for results.</p>
-              </div>
-            </div>
-
-            <!-- RIGHT: scrollable steps -->
-            <div class="sticky-right">
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">01</div>
-                <h3 class="sticky-panel__title">Discovery & Business Understanding</h3>
-                <p class="sticky-panel__text">
-                  Before launching campaigns, I learn about the business including:<br>
-                  • Target customers<br>
-                  • Services or offers<br>
-                  • Current marketing strategy<br>
-                  • Business goals
-                </p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">02</div>
-                <h3 class="sticky-panel__title">Campaign Strategy & Setup</h3>
-                <p class="sticky-panel__text">
-                  Based on the research, I build a campaign structure that may include:<br>
-                  • Audience research<br>
-                  • Ad creative recommendations<br>
-                  • Campaign objective selection<br>
-                  • Tracking setup
-                </p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">03</div>
-                <h3 class="sticky-panel__title">Campaign Launch & Testing</h3>
-                <p class="sticky-panel__text">
-                  Once campaigns are launched, I test different variables such as:<br>
-                  • Audiences<br>
-                  • Ad creatives<br>
-                  • Messaging angles
-                </p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">04</div>
-                <h3 class="sticky-panel__title">Optimization & Performance Monitoring</h3>
-                <p class="sticky-panel__text">
-                  Campaigns are monitored and optimized based on:<br>
-                  • Cost per result<br>
-                  • Click-through rate<br>
-                  • Engagement<br>
-                  • lLead quality
-                </p>
-              </div>
-
-              <div class="sticky-panel animate-bottom">
-                <div class="sticky-panel__num">05</div>
-                <h3 class="sticky-panel__title">Scaling Winning Campaigns</h3>
-                <p class="sticky-panel__text">Winning campaigns are scaled to generate more leads and revenue.</p>
-              </div>
-
-            </div>
-          </section>
-
-          <section class="top_platforms pd-tb pd-lr">
-            <div class="inner">
-              <h2 class="section_ttl center">Tools & Platforms</h2>
-              <div class="cards">
-                <div class="card">
-                  <img src="./img/top/icon/ads_icon.png" alt="ads_icon" class="w100">
-                </div>
-                <div class="card">
-                  <img src="./img/top/icon/business_icon.png" alt="business_icon" class="w100">
-                </div>
-                <div class="card">
-                  <img src="./img/top/icon/canva_icon.png" alt="canva_icon" class="w100">
-                </div>
-                <div class="card">
-                  <img src="./img/top/icon/gsheets_icon.png" alt="gsheets_icon" class="w100">
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="top_cert pd-b pd-lr">
-            <div class="inner">
-              <h2 class="section_ttl center">Certifications</h2>
-              <div class="cards">
-                <div class="card">
-                  <a href="./img/pdf/measure-and-optimize-social-media-marketing-campaigns.pdf" target="_blank">
-                    <div class="cert-icon"><img src="./img/top/icon/cert-icon.png" alt="cert-icon"></div>
-                    <div class="cert-title">
-                      <h2>Measure and Optimize Social Media Marketing Campaigns</h2>
-                      <p>Mar. 03, 2026</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="card">
-                  <a href="./img/pdf/advertising-with-meta.pdf" target="_blank">
-                    <div class="cert-icon"><img src="./img/top/icon/cert-icon.png" alt="cert-icon"></div>
-                    <div class="cert-title">
-                      <h2>Advertising with Meta</h2>
-                      <p>Feb. 13, 2026</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="card">
-                  <a href="./img/pdf/fundamentals-of-social-media-advertising.pdf" target="_blank">
-                    <div class="cert-icon"><img src="./img/top/icon/cert-icon.png" alt="cert-icon"></div>
-                    <div class="cert-title">
-                      <h2>Fundamentals of Social Media Advertising</h2>
-                      <p>Feb. 06, 2026</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="card">
-                  <a href="./img/pdf/social-media-management.pdf" target="_blank">
-                    <div class="cert-icon"><img src="./img/top/icon/cert-icon.png" alt="cert-icon"></div>
-                    <div class="cert-title">
-                      <h2>Social Media Management</h2>
-                      <p>Feb. 03, 2026</p>
-                    </div>
-                  </a>
-                </div>
-                <div class="card">
-                  <a href="./img/pdf/introduction-to-social-media-marketing.pdf" target="_blank">
-                    <div class="cert-icon"><img src="./img/top/icon/cert-icon.png" alt="cert-icon"></div>
-                    <div class="cert-title">
-                      <h2>Introduction to Social Media Marketing</h2>
-                      <p>Jan. 26, 2026</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <a href="#" id="top_contacts" class="anchor"></a>
-          <section class="top_contacts pd-b pd-lr">
-            <div class="inner">
-              <h2 class="section_ttl center">Let's Work Together!</h2>
-
-              <p class="subttl mb50">If you're looking for a Facebook Ads Manager who can help generate leads and grow your business through strategic advertising, I would love to collaborate with you.</p>
-
-              <div class="cards">
-                <div class="card">
-                  <a href=""><img src="./img/top/icon/mail-icon.png" alt="mail">marvillamaricar@gmail.com</a>
-                </div>
-                <div class="card">
-                  <a href="https://www.facebook.com/marvillamaricar" target="_blank"><img src="./img/top/icon/fb-icon.png" alt="fb">facebook.com/marvillamaricar</a>
-                </div>
-                <div class="card">
-                  <a href="http://www.linkedin.com/in/maricar-marvilla-2233ba1b4" target="_blank"><img src="./img/top/icon/link-icon.png" alt="link">linkedin.com/in/maricar-marvilla-2233ba1b4</a>
-                </div>
-                <div class="card">
-                  <a href="https://calendly.com/maricarmarvilla/30min" target="_blank"><img src="./img/top/icon/calendly-icon.png" alt="calendly">calendly.com/maricarmarvilla/30min</a>
-                </div>
-              </div>
-            </div>
-          </section>
-        </article>
-      </main>
-
-      <div id="page_top"><a href="#"><img src="./img/top/icon/right-arrow.png" alt="right-arrow"></a></div>
-      <footer class="footer pd-lr">
-        <div class="inner">
-          <div class="footer_nav mb50">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="#case_studies">Case Studies</a></li>
-              <li><a href="#top_contacts">Contacts</a></li>
-            </ul>
+          </div>
+          <div class="case-imgs">
+            <img src="./img/top/case-study/img01.png" alt="Dec 2024–Apr 2025" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img02.png" alt="Jul–Oct 2024" class="case-img" onclick="openModal(this.src)" />
           </div>
         </div>
-        <p class="copyright">Copyright © All Rights Reserved.</p>
-      </footer>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    </body>
+      </div>
+
+      <!-- Case 2 -->
+      <div class="case-card reveal">
+        <div class="case-banner bg01">
+          <h2>Massage Therapy Clinic</h2>
+          <h3>Bonifacio Global City, Philippines</h3>
+        </div>
+        <div class="case-body">
+          <div class="case-grid">
+            <div class="case-block">
+              <h4>Campaign Goal</h4>
+              <p>Increase massage bookings for the clinic.</p>
+            </div>
+            <div class="case-block">
+              <h4>Strategy</h4>
+              <p>Local audience targeting within BGC with engaging creatives and Messenger inquiry campaigns.</p>
+            </div>
+            <div class="case-block">
+              <h4>Result</h4>
+              <p>Strong demand generated — the clinic achieved a <strong>fully booked month</strong> of appointments.</p>
+            </div>
+          </div>
+          <div class="case-imgs">
+            <img src="./img/top/case-study/img03.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img04.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img05.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img06.png" alt="" class="case-img" onclick="openModal(this.src)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 3 -->
+      <div class="case-card reveal">
+        <div class="case-banner bg02">
+          <h2>Aesthetic Clinic</h2>
+          <h3>Bonifacio Global City, Taguig</h3>
+        </div>
+        <div class="case-body">
+          <div class="case-block" style="margin-bottom:1.5rem;">
+            <h4>Campaign Objective</h4>
+            <p>Generate inquiries for aesthetic and beauty treatments.</p>
+          </div>
+          <div class="case-block" style="margin-bottom:1.5rem;">
+            <h4>Results</h4>
+            <p style="margin-bottom:1rem;"><strong>Campaign 1</strong></p>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>₱9,998</span><span>Ad Spend</span></div>
+              <div class="metric-chip"><span>151</span><span>Messages</span></div>
+              <div class="metric-chip"><span>₱66</span><span>Cost Per Message</span></div>
+              <div class="metric-chip"><span>14,758</span><span>Reach</span></div>
+            </div>
+            <p style="margin:1rem 0 0.5rem;"><strong>Campaign 2</strong></p>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>₱12,454</span><span>Ad Spend</span></div>
+              <div class="metric-chip"><span>275</span><span>Messages</span></div>
+              <div class="metric-chip"><span>₱45</span><span>Cost Per Message</span></div>
+              <div class="metric-chip"><span>43,150</span><span>Reach</span></div>
+            </div>
+          </div>
+          <div class="case-imgs">
+            <img src="./img/top/case-study/img07.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img08.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img09.png" alt="" class="case-img" onclick="openModal(this.src)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 4 -->
+      <div class="case-card reveal">
+        <div class="case-banner bg02">
+          <h2>Aesthetic Clinic</h2>
+          <h3>Muntinlupa, Philippines</h3>
+        </div>
+        <div class="case-body">
+          <div class="case-grid">
+            <div class="case-block">
+              <h4>Campaign Objective</h4>
+              <p>Increase clinic inquiries and support overall business growth.</p>
+            </div>
+            <div class="case-block">
+              <h4>Highlight Result</h4>
+              <p>In November, the clinic generated <strong>₱450,000 in total sales.</strong> Facebook Ads campaigns helped attract new clients and increase inquiries during that period.</p>
+            </div>
+          </div>
+          <div class="case-imgs">
+            <img src="./img/top/case-study/img10.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img11.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img12.png" alt="" class="case-img" onclick="openModal(this.src)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 5 -->
+      <div class="case-card reveal">
+        <div class="case-banner bg03">
+          <h2>Shoe Cleaning Service</h2>
+          <h3>Manila, Philippines</h3>
+        </div>
+        <div class="case-body">
+          <div class="case-grid">
+            <div class="case-block">
+              <h4>Campaign Goal</h4>
+              <p>Generate sales through Facebook Ads.</p>
+            </div>
+            <div class="case-block">
+              <h4>Strategy</h4>
+              <p>Audience targeting for sneaker enthusiasts with engaging creatives and a Messenger-based lead generation campaign.</p>
+            </div>
+          </div>
+          <div class="case-block" style="margin-bottom:1.5rem;">
+            <h4>Result</h4>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>₱68,700</span><span>Revenue Generated</span></div>
+              <div class="metric-chip"><span>₱2,600</span><span>Ad Spend</span></div>
+              <div class="metric-chip"><span>26×</span><span>Return on Ad Spend</span></div>
+            </div>
+          </div>
+          <div class="case-imgs">
+            <img src="./img/top/case-study/img13.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img14.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img15.png" alt="" class="case-img" onclick="openModal(this.src)" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Case 6 -->
+      <div class="case-card reveal">
+        <div class="case-banner bg04">
+          <h2>Tap Dance Coaching Program</h2>
+          <h3>United States</h3>
+        </div>
+        <div class="case-body">
+          <div class="case-block" style="margin-bottom:1.5rem;">
+            <h4>Campaign Objective</h4>
+            <p>Drive traffic to a ticket sales page for a coaching program.</p>
+          </div>
+          <div class="case-block" style="margin-bottom:1.5rem;">
+            <h4>Results</h4>
+            <p style="margin-bottom:0.75rem;"><strong>Campaign 1</strong></p>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>402</span><span>Link Clicks</span></div>
+              <div class="metric-chip"><span>$0.18</span><span>Cost Per Click</span></div>
+              <div class="metric-chip"><span>6,315</span><span>Reach</span></div>
+              <div class="metric-chip"><span>$71.24</span><span>Ad Spend</span></div>
+            </div>
+            <p style="margin:1rem 0 0.75rem;"><strong>Campaign 2</strong></p>
+            <div class="case-metrics">
+              <div class="metric-chip"><span>503</span><span>Website Leads</span></div>
+              <div class="metric-chip"><span>$3.55</span><span>Cost Per Lead</span></div>
+              <div class="metric-chip"><span>3,137</span><span>Link Clicks</span></div>
+              <div class="metric-chip"><span>$1,785.81</span><span>Ad Spend</span></div>
+            </div>
+          </div>
+          <div class="case-imgs">
+            <img src="./img/top/case-study/img16.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img17.png" alt="" class="case-img" onclick="openModal(this.src)" />
+            <img src="./img/top/case-study/img18.png" alt="" class="case-img" onclick="openModal(this.src)" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ADDITIONAL EXPERIENCE ===== -->
+<section class="add-exp section">
+  <div class="container">
+    <div class="add-exp-grid reveal">
+      <div>
+        <div class="label-tag">Beyond Paid Ads</div>
+        <h2 class="section-title light">Additional Experience</h2>
+      </div>
+      <div>
+        <p><strong>Content Strategy &amp; Social Media Support</strong></p>
+        <p>Alongside Facebook Ads management, I have also supported several clients with social media content strategy and page management.</p>
+        <div class="add-exp-points">
+          <div class="add-exp-point">Writing hooks for carousel posts</div>
+          <div class="add-exp-point">Creating carousel content structure</div>
+          <div class="add-exp-point">Supporting Instagram Reel concepts</div>
+          <div class="add-exp-point">Caption writing and content planning</div>
+        </div>
+        <p style="margin-top:1.25rem;">My role was to support brand <strong>visibility</strong> and <strong>audience engagement</strong> while paid campaigns focused on lead generation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STRATEGY SECTIONS ===== -->
+<section class="strategy section">
+  <div class="container">
+    <div class="strategy-wrap">
+      <div class="strategy-sticky reveal">
+        <div class="label-tag">How It Works</div>
+        <h2 class="section-title">My Facebook<br>Ads Strategy</h2>
+        <p style="margin-top:1rem; color:var(--text-muted);">Successful Facebook advertising requires a deliberate, data-driven approach — from research to scaling.</p>
+      </div>
+      <div class="strategy-steps">
+        <div class="strategy-step reveal">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Audience Research</h3>
+          <p class="step-text">Understanding customer demographics, interests, and behaviors to target the right audience from the start.</p>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Campaign Structure</h3>
+          <ul class="step-text">
+            <li>Lead generation</li>
+            <li>Messenger inquiries</li>
+            <li>Website traffic</li>
+            <li>Conversion campaigns</li>
+          </ul>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Creative Testing</h3>
+          <p class="step-text">Testing multiple ad creatives and messaging angles to determine the most effective combinations.</p>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Optimization</h3>
+          <p class="step-text">Continuously optimizing using performance metrics: CTR, cost per result, and engagement rates.</p>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">05</div>
+          <h3 class="step-title">Scaling</h3>
+          <p class="step-text">Winning campaigns are scaled to generate consistent leads and revenue over time.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="strategy2 section">
+  <div class="container">
+    <div class="strategy-wrap">
+      <div class="strategy-steps">
+        <div class="strategy-step reveal">
+          <div class="step-num">01</div>
+          <h3 class="step-title">Discovery &amp; Business Understanding</h3>
+          <p class="step-text">Before launching, I learn about the business: target customers, services, current marketing strategy, and goals.</p>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">02</div>
+          <h3 class="step-title">Campaign Strategy &amp; Setup</h3>
+          <ul class="step-text">
+            <li>Audience research</li>
+            <li>Ad creative recommendations</li>
+            <li>Campaign objective selection</li>
+            <li>Tracking setup</li>
+          </ul>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">03</div>
+          <h3 class="step-title">Campaign Launch &amp; Testing</h3>
+          <ul class="step-text">
+            <li>Test audiences</li>
+            <li>Test ad creatives</li>
+            <li>Test messaging angles</li>
+          </ul>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">04</div>
+          <h3 class="step-title">Optimization &amp; Performance Monitoring</h3>
+          <ul class="step-text">
+            <li>Cost per result</li>
+            <li>Click-through rate</li>
+            <li>Engagement &amp; lead quality</li>
+          </ul>
+        </div>
+        <div class="strategy-step reveal">
+          <div class="step-num">05</div>
+          <h3 class="step-title">Scaling Winning Campaigns</h3>
+          <p class="step-text">Winning campaigns are scaled to generate more leads and revenue consistently.</p>
+        </div>
+      </div>
+      <div class="strategy-sticky reveal">
+        <div class="label-tag">Collaboration</div>
+        <h2 class="section-title">How I Work<br>With Clients</h2>
+        <p style="margin-top:1rem; color:var(--text-muted);">A clear, collaborative process ensures every campaign is built strategically and optimized for results.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TOOLS ===== -->
+<section class="tools section">
+  <div class="container">
+    <div class="label-tag" style="text-align:center;display:block;">My Stack</div>
+    <h2 class="section-title light center" style="margin-bottom:3rem;">Tools &amp; Platforms</h2>
+    <div class="tools-grid">
+      <div class="tool-card reveal reveal-delay-1">
+        <img src="./img/top/icon/ads_icon.png" alt="Facebook Ads Manager" />
+      </div>
+      <div class="tool-card reveal reveal-delay-2">
+        <img src="./img/top/icon/business_icon.png" alt="Meta Business Suite" />
+      </div>
+      <div class="tool-card reveal reveal-delay-3">
+        <img src="./img/top/icon/canva_icon.png" alt="Canva" />
+      </div>
+      <div class="tool-card reveal reveal-delay-4">
+        <img src="./img/top/icon/gsheets_icon.png" alt="Google Sheets" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="certs section">
+  <div class="container">
+    <div class="certs-header reveal">
+      <div class="label-tag">Verified Credentials</div>
+      <h2 class="section-title">Certifications</h2>
+    </div>
+    <div class="certs-grid">
+      <div class="cert-card reveal reveal-delay-1">
+        <a href="./img/pdf/measure-and-optimize-social-media-marketing-campaigns.pdf" target="_blank">
+          <div class="cert-icon-wrap"><img src="./img/top/icon/cert-icon.png" alt="cert" /></div>
+          <div class="cert-info">
+            <h3>Measure and Optimize Social Media Marketing Campaigns</h3>
+            <p>Mar. 03, 2026</p>
+          </div>
+        </a>
+      </div>
+      <div class="cert-card reveal reveal-delay-2">
+        <a href="./img/pdf/advertising-with-meta.pdf" target="_blank">
+          <div class="cert-icon-wrap"><img src="./img/top/icon/cert-icon.png" alt="cert" /></div>
+          <div class="cert-info">
+            <h3>Advertising with Meta</h3>
+            <p>Feb. 13, 2026</p>
+          </div>
+        </a>
+      </div>
+      <div class="cert-card reveal reveal-delay-3">
+        <a href="./img/pdf/fundamentals-of-social-media-advertising.pdf" target="_blank">
+          <div class="cert-icon-wrap"><img src="./img/top/icon/cert-icon.png" alt="cert" /></div>
+          <div class="cert-info">
+            <h3>Fundamentals of Social Media Advertising</h3>
+            <p>Feb. 06, 2026</p>
+          </div>
+        </a>
+      </div>
+      <div class="cert-card reveal reveal-delay-4">
+        <a href="./img/pdf/social-media-management.pdf" target="_blank">
+          <div class="cert-icon-wrap"><img src="./img/top/icon/cert-icon.png" alt="cert" /></div>
+          <div class="cert-info">
+            <h3>Social Media Management</h3>
+            <p>Feb. 03, 2026</p>
+          </div>
+        </a>
+      </div>
+      <div class="cert-card reveal reveal-delay-1">
+        <a href="./img/pdf/introduction-to-social-media-marketing.pdf" target="_blank">
+          <div class="cert-icon-wrap"><img src="./img/top/icon/cert-icon.png" alt="cert" /></div>
+          <div class="cert-info">
+            <h3>Introduction to Social Media Marketing</h3>
+            <p>Jan. 26, 2026</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="reveal" style="text-align:center; margin-bottom:3rem;">
+      <div class="label-tag">Get In Touch</div>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="contact-sub">Looking for a Facebook Ads Manager who can generate leads and grow your business? I'd love to collaborate.</p>
+    </div>
+    <div class="contact-links reveal">
+      <div class="contact-link-item">
+        <img src="./img/top/icon/mail-icon.png" alt="Email" />
+        <a href="mailto:maricarmarvilla@gmail.com">maricarmarvilla@gmail.com</a>
+      </div>
+      <div class="contact-link-item">
+        <img src="./img/top/icon/fb-icon.png" alt="Facebook" />
+        <a href="https://www.facebook.com/marvillamaricar" target="_blank">facebook.com/marvillamaricar</a>
+      </div>
+      <div class="contact-link-item">
+        <img src="./img/top/icon/link-icon.png" alt="LinkedIn" />
+        <a href="http://www.linkedin.com/in/maricar-marvilla-2233ba1b4" target="_blank">linkedin.com/in/maricar-marvilla-2233ba1b4</a>
+      </div>
+      <div class="contact-link-item">
+        <img src="./img/top/icon/calendly-icon.png" alt="Calendly" />
+        <a href="https://calendly.com/maricarmarvilla/30min" target="_blank">calendly.com/maricarmarvilla/30min</a>
+      </div>
+    </div>
+    <div style="text-align:center;">
+      <a href="https://calendly.com/maricarmarvilla/30min" target="_blank" class="contact-cta">
+        Book a Free Discovery Call
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-logo">Maricar Marvilla</div>
+  <nav class="footer-nav">
+    <a href="#">Home</a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <p class="footer-copy">Copyright &copy; 2026 Maricar Marvilla. All rights reserved.</p>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
+
+<!-- Image Modal -->
+<div class="modal-overlay" id="modal" onclick="closeModal(event)">
+  <button class="modal-close" onclick="document.getElementById('modal').classList.remove('open')">&times;</button>
+  <img class="modal-img" id="modal-img" src="" alt="Campaign image" />
+</div>
+
+<script src="./js/functions.js"></script>
+</body>
 </html>
