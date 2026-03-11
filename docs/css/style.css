@@ -333,10 +333,6 @@ a.anchor {
   position: relative;
 }
 
-.sticky-section02 .sticky-panel {
-  align-items: flex-end;
-}
-
 .sticky-panel::after {
   content: "";
   position: absolute;
@@ -344,12 +340,12 @@ a.anchor {
   width: 100px;
   height: 5px;
   bottom: 0;
-  left: 0;
+  left: -50px;
 }
 
 .sticky-section02 .sticky-panel::after {
   left: unset;
-  right: 0;
+  right: -50px;
 }
 
 .sticky-panel__num {
@@ -365,19 +361,11 @@ a.anchor {
   margin-bottom: 1rem;
 }
 
-.sticky-section02 .sticky-panel__title {
-  text-align: end;
-}
-
 .sticky-panel__text {
   opacity: 0.65;
   line-height: 1.8;
-  max-width: 44ch;
+  max-width: 100%;
   font-size: clamp(1.1rem, 1.1vw, 1rem);
-}
-
-.sticky-section02 .sticky-panel__text {
-  text-align: end;
 }
 
 .top_snapshot {
