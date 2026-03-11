@@ -365,6 +365,10 @@ a.anchor {
   margin-bottom: 1rem;
 }
 
+.sticky-section02 .sticky-panel__title {
+  text-align: end;
+}
+
 .sticky-panel__text {
   opacity: 0.65;
   line-height: 1.8;
