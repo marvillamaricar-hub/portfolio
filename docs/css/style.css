@@ -297,10 +297,16 @@ body {
   z-index: 1;
   width: 130px;
   height: 130px;
+  transition: all 0.5s;
+}
+
+.meta_cert:hover {
+  transform: translateY(-2px);
 }
 
 .meta_cert a img {
   width: 100%;
+  filter: drop-shadow(1px 1px 10px #0009);
 }
 
 /* ===== STATS BANNER ===== */
