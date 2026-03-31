@@ -19,7 +19,7 @@ ul { list-style: none; }
   --ff-display: 'Cormorant Garamond', Georgia, serif;
   --ff-body: 'DM Sans', system-ui, sans-serif;
   --pad-x: clamp(1.5rem, 5vw, 5rem);
-  --pad-y: clamp(4rem, 8vw, 7rem);
+  --pad-y: clamp(4rem, 5vw, 5rem);
   --radius: 12px;
   --transition: 0.45s cubic-bezier(0.4, 0, 0.2, 1);
   --shadow: 0 8px 40px rgba(14,35,64,0.1);
@@ -181,6 +181,8 @@ body {
   padding: 7rem var(--pad-x) var(--pad-y);
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 .hero .container {
   display: grid;
@@ -687,6 +689,23 @@ body {
 }
 .tool-card img { height: 60px; object-fit: contain; }
 
+/* ===== BADGE ===== */
+.badge { background: var(--cream); }
+.badge-header { text-align: center; margin-bottom: 3rem; }
+.badge_cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge_cards .card {
+  width: calc(100% / 3);
+}
+
+.badge_cards .card iframe {
+  width: 100% !important;
+  min-height: 265px;
+}
+
 /* ===== CERTS ===== */
 .certs { background: var(--cream); }
 .certs-header { text-align: center; margin-bottom: 3rem; }
@@ -875,6 +894,9 @@ body {
   }
   .certs-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: 1fr 1fr; }
+  .badge_cards .card {
+    width: calc(100% / 2);
+  }
 }
 
 @media (max-width: 480px) {
@@ -889,5 +911,9 @@ body {
 
   .hero h1::after {
     bottom: 4px;
+  }
+
+  .badge_cards .card {
+    width: calc(100% / 1);
   }
 }
