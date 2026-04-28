@@ -785,6 +785,7 @@ body {
   color: var(--navy);
   margin-bottom: 3rem;
   line-height: 1.5;
+  font-weight: 600;
 }
 .contact-links {
   display: flex;
