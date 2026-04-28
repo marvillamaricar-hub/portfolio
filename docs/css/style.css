@@ -283,6 +283,18 @@ body {
   margin-bottom: 1rem;
   max-width: 50ch;
 }
+.hero p.big {
+  font-size: 25px;
+}
+.hero p.mid {
+  font-size: 20px;
+}
+.hero p.small {
+  font-size: 18px;
+}
+.hero p.smaller {
+  font-size: 16px;
+}
 .hero p strong { color: var(--gold-light); font-weight: 600; }
 .hero-cta {
   display: inline-flex;
