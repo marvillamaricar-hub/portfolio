@@ -717,7 +717,7 @@ body {
 .tool-card img { height: 60px; object-fit: contain; }
 
 /* ===== BADGE ===== */
-.badge { background: var(--cream); }
+.badge { background: var(--white); }
 .badge-header { text-align: center; margin-bottom: 3rem; }
 .badge_cards {
   display: flex;
@@ -775,7 +775,7 @@ body {
 .cert-info p { font-size: 0.72rem; color: var(--text-muted); }
 
 /* ===== CONTACT ===== */
-.contact { background: var(--white); }
+.contact { background: var(--cream); }
 .contact .container { max-width: 800px; text-align: center; }
 .contact .section-title { margin-bottom: 1rem; }
 .contact-sub {
@@ -962,6 +962,10 @@ body {
   font-size: 16px;
   font-weight: 600;
   text-align: center;
+}
+
+.how-i-help {
+  background: var(--white);
 }
 
 /* ===== RESPONSIVE ===== */
