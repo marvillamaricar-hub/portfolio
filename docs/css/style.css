@@ -272,8 +272,8 @@ body {
   font-weight: 400;
   font-style: italic;
   color: var(--gold-light);
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid var(--border);
 }
 .hero p {
